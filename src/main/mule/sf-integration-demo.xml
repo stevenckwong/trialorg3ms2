@@ -15,7 +15,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	<flow name="salesforce-accounts-integrationFlow" doc:id="57a47ca4-1b75-4520-998a-1e2e7bc80b51" >
 		<http:listener doc:name="Listener" doc:id="c848ed77-98fe-41c1-b188-5b84a3137162" config-ref="HTTP_Listener_config" path="/self-service"/>
 		<logger level="INFO" doc:name="Logger" doc:id="595b3388-8b6f-4a82-baf5-9398acdd61c4" message='#["Test Apex API has started"]'/>
-		<set-payload value="Some Dummy Data" doc:name="Get Data" doc:id="ec538e84-6e4d-42d1-b8f2-0d7e510bf7fe" />
+		<set-payload value="Retrieved Lots of Data" doc:name="New Mock API" doc:id="ec538e84-6e4d-42d1-b8f2-0d7e510bf7fe" />
 		<ee:transform doc:name="Transform Message" doc:id="5a65d9a9-5c67-42ce-9004-0c28d64f8603" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
